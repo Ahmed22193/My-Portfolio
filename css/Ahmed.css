@@ -297,6 +297,9 @@ header .container nav ul li a:hover{
 .AboutUs .container .imgabout .image{
     position: relative;
 }
+.AboutUs .container .imgabout .image img{
+    width: 350px;
+}
 .AboutUs .container .imgabout .image .transion{
     position: absolute;
     z-index: 3;
@@ -394,7 +397,7 @@ header .container nav ul li a:hover{
 }
 @media (max-width:767px){
     .AboutUs{
-        height: 155vh;
+        height: 180vh;
         justify-content: center;
     }
     .AboutUs .container{
@@ -402,13 +405,16 @@ header .container nav ul li a:hover{
     }
     .AboutUs .container .imgabout{
         position: relative;
-        width: 95%;
+        width: 98%;
     }
     .AboutUs .container .imgabout .image{
-        width: 100%;
+        width: 90%;
+        margin: 5px auto;
+        margin-top: 80px;
     }
     .AboutUs .container .imgabout .image img{
-        width:100% ; 
+        width:100%;
+        border-radius: 10px;
     }
     .AboutUs .container .imgabout::before{
         display: none;
@@ -477,15 +483,12 @@ header .container nav ul li a:hover{
 .Portfolio .container .Port_menu button{
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     border: none;
-    color: #333333;
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 400;
     letter-spacing: 1px;
     padding: 3px 12px;
     cursor: pointer;
-}
-.Portfolio .container .Port_menu .activ{ /* activ element */
-    color: #ff305b;
+    color: #3e3e3e;
 }
 .Portfolio .container .Caards_Portfolio{
     width: 100%;
@@ -495,22 +498,43 @@ header .container nav ul li a:hover{
 }
 .Portfolio .container .Caards_Portfolio .cradPort{
     cursor: pointer;
-    position: relative;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
 }
-.Portfolio .container .Caards_Portfolio .cradPort .Hov{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #33333388;
-    opacity: 0;
-    z-index: 2;
-    transition: opacity 0.4s;
+.Portfolio .container .Caards_Portfolio .cradPort:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
-.Portfolio .container .Caards_Portfolio .cradPort .Hov:hover{
-    opacity: 1;
+.Portfolio .container .Caards_Portfolio .cradPort button{
+    margin: 10px auto;
+    margin-top: auto;
+    transition: 0.3s;
+    background-color: #e74c3c;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
 }
-.Portfolio .container .Caards_Portfolio .cradPort img{
-    width: 100%;
+.Portfolio .container .Caards_Portfolio .cradPort button a{
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.Portfolio .container .Caards_Portfolio .cradPort button:hover{
+    background-color: #c0392b;
+}
+.Portfolio .container .Caards_Portfolio .cradPort h3{
+    margin: 20px auto;
+    color: #2c3e50;
+}
+.Portfolio .container .Caards_Portfolio .cradPort p{
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin: 10px auto;
 }
 @media (max-width:767px){
     .Portfolio .container .portTitle h2{
@@ -768,6 +792,7 @@ header .container nav ul li a:hover{
 .Contact_us{
     width: 100%;
     padding: 70px 0;
+    background: #f1f1f1;
 }
 .Contact_us .container .ContactTitle{
     display: flex;
@@ -842,6 +867,15 @@ header .container nav ul li a:hover{
     background-color: rgb(226, 0, 0);
 }
 @media (max-width:767px){
+    .Contact_us .container .form .btn_submit{
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    .Contact_us .container .form .btn_submit input{
+        width: 50%;
+    }
     .Contact_us{
         padding: 30px 0;
     }
@@ -932,23 +966,25 @@ footer a:hover{
     font-size: 1.5em;
     display: none;
     transition: color 0.6s;
+    z-index: 10;
 }
 #MENUEBAR:hover {
     color: #ff305b;
 }
 .menulinks{
     position: absolute;
-    bottom: -319px;
     width: 100%;
     display: none;
-    background-color: #333;
     color: white;
-    transform: translateY(-350px);
-    transition: transform 0.5s ease-in-out ;
-    z-index: -3;
+    background-color: #333;
+    transition: height 0.3s ease-in-out 0.3s;
+    overflow: hidden;
+    margin-top: 300px;
+    height: 0;
 }
 #MENUEBAR:hover + .menulinks{
-    transform: translateY(0px);
+    height: 28vh;
+    overflow: hidden;
 }
 header .container nav .menulinks ul{
     display: flex;
@@ -968,11 +1004,11 @@ header .container nav .menulinks ul li a:hover{
     color: #ff305b;
 }
 @media (max-width:767px) {
-    #MENUEBAR{
-        display: block;
-    }
     header .container nav .linkes ul{
         display: none;
+    }
+    #MENUEBAR{
+        display: block;
     }
     header .container nav .menulinks{
         display: block;
@@ -984,5 +1020,4 @@ header .container nav .menulinks ul li a:hover{
    ---- End Of Project ------
    --------------------------
 */
-
 
