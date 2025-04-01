@@ -85,6 +85,7 @@ header .container nav .logo a{
     font-size: 24px;
     font-weight: 800;
     color: #ff305b;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 header .container nav .linkes{
     width: 75%;
@@ -146,6 +147,7 @@ header .container nav ul li a:hover{
     font-size: 70px;
     color: #ff305b;
     font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .mainpage .content1 .content2 div{
     width: 100%;
@@ -174,7 +176,7 @@ header .container nav ul li a:hover{
         width: 0;
     }
     to{
-        width: 90.05px;
+        width: 106.05px;
     }
 }
 @media (max-width:767px){
